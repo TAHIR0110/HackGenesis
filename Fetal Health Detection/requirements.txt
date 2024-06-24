@@ -1,0 +1,7 @@
+#Basic Libraries:
+1. numpy
+2. pandas
+3. seaborn 
+4. matplotlib.pyplot
+5. plotly.graph_objects
+6. sklearn
