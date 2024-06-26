@@ -1,0 +1,41 @@
+.container {
+  margin-top: 4rem;
+  text-align: center;
+  .contact-form {
+    max-width: 50rem;
+    margin: auto;
+    .contact-inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    //   text-align: center;
+      input[type="submit"] {
+        cursor: pointer;
+        transition: all 0.2s;
+        border-radius: 20px;
+        &:hover {
+          background-color: rgb(3, 0, 0);
+          border: 1px solid blue($color: #2e2d2d);
+          color: rgb(167, 157, 157);
+          transform: scale(0.9);
+        }
+      }
+    }
+  }
+}
+
+.common-heading {
+  margin-top: 40px;
+//   padding-bottom: 2rem;
+  text-align: center;
+  color: #444;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 40px;
+}
+.radius{
+    border-radius: 20px;
+    border: 1px solid rgb(108, 190, 190);
+    text-transform: capitalize;
+    font-size: 18px;
+}

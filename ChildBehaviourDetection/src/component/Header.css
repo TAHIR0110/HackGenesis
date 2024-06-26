@@ -1,0 +1,16 @@
+.logo {
+  height: auto;
+  /* max-width: 34%; */
+  color: #68f9ce;
+  font-weight: bolder;
+  font-size: 3.5rem;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.2s linear;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}

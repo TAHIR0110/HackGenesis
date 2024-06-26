@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap");
+
+
+.navbar-list {
+    align-items: center;
+    display: flex;
+    gap: 4.8rem;
+    li {
+      list-style: none;
+      .navbar-link {
+        &:link,
+        &:visited {
+          // position: fixed;
+          font-family: "Poppins", sans-serif;
+          display: inline-block;
+          // text-decoration: none;
+          font-size: 2rem;
+          // text-transform: uppercase;
+          color: rgb(230, 248, 251);
+          font-weight: 600;
+          // font-display:list-separator(#list);
+          transition: color 0.3s ease;
+        }
+        &:hover,
+        &:active {
+          color: #3796bb;
+        }
+      }
+    }
+  }
+  .user{
+    color: #fff;
+    margin-top: 1px;
+    padding: 2px;
+  }
+  .login{
+    border-radius: 20px;
+    font-family:"Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    // color: #9baeb6;
+    &:active{
+      cursor: pointer;
+    }
+    &:hover{
+      transition: 0.2 ease-in;
+    }
+
+  }
+  .mobile-navbar-btn {
+    background-color: #3796bb;
+    border-radius: 20px;
+    display: none;
+    .close-outline {
+      display: none;
+    }
+  }
+  .mobile-navbar-btn[name="close-outline"] {
+    display: none;
+  }
+  @media (max-width: 480px) {
+    .mobile-navbar-btn {
+      display: inline-block;
+      z-index: 999;
+      border: black;
+      .mobile-nav-icon {
+        font-size: 4.2rem;
+        color: black;
+      }
+    }
+    /* hide the original nav menu  */
+    .navbar-list {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: orange;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      text-align: center;
+      transform: translateX(100%);
+      visibility: hidden;
+      opacity: 0;
+      li {
+        .navbar-link {
+          &:link,
+          &:visited {
+            font-size: 4.2rem;
+          }
+          &:hover,
+          &:active {
+            color: rgb(175, 175, 255);
+          }
+        }
+      }
+    }
+    .active .mobile-nav-icon {
+      display: none;
+      font-size: 4.2rem;
+      position: absolute;
+      top: 3%;
+      right: 10%;
+      color: black;
+      z-index: 9999;
+    }
+    .active .close-outline {
+      display: inline-block;
+    }
+    .active .navbar-list {
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(0);
+      z-index: 999;
+    }
+  }
