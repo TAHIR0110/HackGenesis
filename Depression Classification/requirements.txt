@@ -1,0 +1,8 @@
+NumPy: For numerical computing.
+pandas: For data analysis and manipulation.
+scikit-learn: For machine learning tasks such as classification and clustering.
+Matplotlib: For creating visualizations.
+Keras: High-level neural networks API.
+tqdm: For progress bars.
+seaborn: For statistical data visualization.
+tensorflow: Backend for Keras.
